@@ -10,26 +10,34 @@
 
 #include <stdio.h>
 
+int a = 0, b = c, d = c;
+
 // Basic Operations
 
-int addition(void) {
-  return 0; // a + b
+int addition(int a, int b) {
+  return a + b;
 }
 
-int subtraction(void) {
-  return 0; // a - b
+int subtraction(int a, int b) {
+  return a - b;
 }
 
-int multiplication(void) {
-  return 0; // a * b
+int multiplication(int a, int b) {
+  return a * b;
 }
 
-int division(void) {
-  return 0; // a / b
+int division(int a, int b) {
+  return a / b;
 }
 
 int master(void) {
-  // Edit variables
+  puts("######################");
+  puts("#  Basic Calculator  #");
+  puts("######################");
+  puts("[1] Edit variables");
+  puts("[2] Perform Calculation");
+  // input
+
   // Do function
   return 0;
 }
