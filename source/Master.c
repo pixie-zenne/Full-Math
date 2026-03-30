@@ -6,6 +6,8 @@
  *  @license MIT
  ************************/
 
+#define pi 3.14
+
 #include <stdio.h>
 
 // Basic Operations
