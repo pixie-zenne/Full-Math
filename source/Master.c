@@ -8,9 +8,6 @@
 
 #include <stdio.h>
 
-// Basic variables
-int a = 0, b = 0;
-
 // Basic Operations
 
 int addition(void) {
