@@ -11,19 +11,19 @@
 // Basic Operations
 
 int addition(void) {
-  return 0;
+  return 0; // a + b
 }
 
 int subtraction(void) {
-  return 0;
+  return 0; // a - b
 }
 
 int multiplication(void) {
-  return 0;
+  return 0; // a * b
 }
 
 int division(void) {
-  return 0;
+  return 0; // a / b
 }
 
 int master(void) {
