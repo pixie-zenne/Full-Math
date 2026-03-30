@@ -1,1 +1,1 @@
-# Full-Math
+## Mini Calculator
