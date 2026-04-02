@@ -7,27 +7,36 @@
  ************************/
 
 #include <stdio.h>
+#include <string.h>
 
-int a = 0, b = 0;
-
-int addition(int a, int b) {
-  return a + b;
+void print(float result) {
+	printf("Result: %.2f\n", result);
+	return;
 }
 
-int subtraction(int a, int b) {
-  return a - b;
+void addition(float a, float b) {
+	print(a + b);
+  return;
 }
 
-int multiplication(int a, int b) {
-  return a * b;
+void subtraction(float a, float b) {
+	print(a - b);
+  return;
 }
 
-int division(int a, int b) {
-  return a / b;
+void multiplication(float a, float b) {
+	print(a * b);
+  return;
+}
+
+void division(float a, float b) {
+	print(a / b);
+  return;
 }
 
 int master(void) {
-  char input = '\0';
+	int input = 0;
+	float a = 0, b = 0;
 
   puts("######################");
   puts("#  Basic Calculator  #");
@@ -35,28 +44,35 @@ int master(void) {
   puts("[1] Addition");
   puts("[2] Subtraction");
   puts("[3] Multiplication");
-  puts("[4] DIvision");
+  puts("[4] Division");
 
-  puts(">> ");
-  fgets(input, sizeof(input), stdin);
+  printf(">> ");
+  if ((scanf("%i", &input) != 1) || (input > 4 || input < 1)) {
+		fprintf(stderr, "No valid selection found, exiting program\n");
+		return 1;
+	}
 
-  if (strcmp(input, "1") == 0) {
-    addition();
-  }
-  else if (strcmp(input, "2") == 0) {
-    subtraction();
-  }
-  else if (strcmp(input, "3") == 0) {
-    multiplication();
-  }
-  else if (strcmp(inputm "4") == 0) {
-    division();
-  }
+	printf("Enter the first number: ");
+	if (scanf("%f", &a) != 1) {
+		fprintf(stderr, "The first number is invalid, exiting program");
+		return 2;
+	}
+
+	printf("Enter the second number: ");
+	if (scanf("%f", &b) != 1) {
+		fprintf(stderr, "The second number is invalid, exiting program");
+		return 3;
+	}
+
+  if (input == 1) addition(a, b);
+  else if (input == 2) subtraction(a, b);
+  else if (input == 3) multiplication(a ,b);
+  else if (input == 4) division(a, b);
   else {
-    puts("No valid selection found, exiting program");
-    return 1;
+		fprintf(stderr, "Unknown error had occured, exiting program");
+    return 4;
   }
 
-  puts("Program ran successfully! exiting program")'
+  puts("Program ran successfully! exiting program");
   return 0;
 }
