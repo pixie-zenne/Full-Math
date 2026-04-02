@@ -1,5 +1,7 @@
-all:
+all: build
 
-create:
+build:
+	gcc ../source/Master.c -o BasicCalculator
 
-remove:
+clear:
+	rm BasicCalculator
