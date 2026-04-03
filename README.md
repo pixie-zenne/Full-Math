@@ -24,8 +24,8 @@
 Feel free to contribute to the project through:
 - Adding or improving code
 - Adding or improving documentation
-- Reporting bugs
-- Suggest features
+- Bug reports
+- Feature suggestions
 
 ## License
 
