@@ -19,13 +19,13 @@
 - **Division**: Divide 'a' from 'b'.
 - **Input Validation**: Properly handles invalid inputs. (hopefully)
 
-## Contributing
+## Contributions
 
 Feel free to contribute to the project through:
+- Adding or improving code
 - Adding or improving documentation
 - Reporting bugs
-- Improving the code
-- Feature suggestions
+- Suggest features
 
 ## License
 
