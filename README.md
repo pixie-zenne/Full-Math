@@ -29,4 +29,4 @@ Feel free to contribute to the project through:
 
 ## License
 
-Licensed under the "Apache License 2.0". See LICENSE file for details.
+Licensed under the "MIT License". See LICENSE file for details.
